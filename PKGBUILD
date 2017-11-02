@@ -2,7 +2,7 @@
 
 pkgname=usbguard
 pkgver=0.7.0
-pkgrel=4
+pkgrel=5
 license=('GPL2')
 pkgdesc='USBGuard is a software framework for implementing USB device authorization policies'
 makedepends=('libxslt' 'imagemagick' 'qt5-svg' 'qt5-tools')
