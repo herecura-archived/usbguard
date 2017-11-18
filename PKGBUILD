@@ -12,7 +12,7 @@ optdepends=(
     'qt5-tools: usbguard applet'
     'hicolor-icon-theme: usbguard applet'
 )
-arch=('i686' 'x86_64')
+arch=('x86_64')
 url='https://github.com/dkopecek/usbguard'
 source=(
 	"$url/releases/download/$pkgname-$pkgver/$pkgname-$pkgver.tar.gz"
