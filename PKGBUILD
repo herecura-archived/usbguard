@@ -2,7 +2,7 @@
 
 pkgname=usbguard
 pkgver=0.7.1
-pkgrel=1
+pkgrel=2
 license=('GPL2')
 pkgdesc='USBGuard is a software framework for implementing USB device authorization policies'
 makedepends=('libxslt' 'asciidoctor' 'imagemagick' 'qt5-svg' 'qt5-tools')
@@ -56,7 +56,7 @@ package() {
     make SYSTEMD_UNIT_DIR="/usr/lib/systemd/system" DESTDIR="$pkgdir" install
     install -pDm 644 "$pkgdir/usr/share/applications/usbguard-applet-qt.desktop" \
         "$pkgdir/etc/xdg/autostart/usbguard-applet-qt.desktop"
-    install -pDm 644 usbguard-daemon.conf \
+    install -pDm 600 usbguard-daemon.conf \
         "$pkgdir/etc/usbguard/usbguard-daemon.conf"
-    install -pDm 644 rules.conf "$pkgdir/etc/usbguard/rules.conf"
+    install -pDm 600 rules.conf "$pkgdir/etc/usbguard/rules.conf"
 }
