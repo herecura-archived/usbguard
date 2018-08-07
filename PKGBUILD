@@ -1,8 +1,9 @@
+# vim:set ft=sh:
 # Maintainer: Ian Beringer <ian@ianberinger.com>
 
 pkgname=usbguard
 pkgver=0.7.4
-pkgrel=1
+pkgrel=2
 license=('GPL2')
 pkgdesc='USBGuard is a software framework for implementing USB device authorization policies'
 makedepends=('libxslt' 'asciidoctor' 'imagemagick' 'qt5-svg' 'qt5-tools')
